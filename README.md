@@ -4,6 +4,6 @@
 
 <div>
    <div> Made by:</div>
-<div> <a href="github.com/tanmay-vig" target="_blank">
+<div> <a href="https://github.com/tanmay-vig" target="_blank">
 Tanmay Vig </a></div>
 </div>
