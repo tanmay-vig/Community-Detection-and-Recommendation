@@ -127,10 +127,10 @@ if __name__ == "__main__":
     # Example content interactions (user -> content)
     content_dict = {
         1: ["Content_A", "Content_B"],
-        2: ["Content_A"],
+        2: ["Content_D"],
         3: ["Content_B", "Content_C"],
         4: ["Content_C"],
-        5: ["Content_E"],
+        5: ["Content_A" , "Content_E"],
         6: ["Content_C,", "Content_D"],
         7: ["Content_D"],
         8: ["Content_F"],
