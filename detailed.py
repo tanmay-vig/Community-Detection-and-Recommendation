@@ -125,21 +125,46 @@ if __name__ == "__main__":
     print("Top 10 Influential Nodes by Centrality:", top_nodes)
     
     # Example content interactions (user -> content)
+
     content_dict = {
-        1: ["Content_A", "Content_B"],
-        2: ["Content_D"],
-        3: ["Content_B", "Content_C"],
-        4: ["Content_C"],
-        5: ["Content_A" , "Content_E"],
-        6: ["Content_C,", "Content_D"],
-        7: ["Content_D"],
-        8: ["Content_F"],
-        9: ["Content_A" , "Content_G"],
-        10: ["Content_G" , "Content_H"],
+    1: ["Content_A", "Content_B", "Content_C"],
+    2: ["Content_D", "Content_E"],
+    3: ["Content_B", "Content_C", "Content_F"],
+    4: ["Content_C", "Content_G"],
+    5: ["Content_A", "Content_E", "Content_H"],
+    6: ["Content_C", "Content_D", "Content_I"],
+    7: ["Content_D", "Content_F"],
+    8: ["Content_F", "Content_H"],
+    9: ["Content_A", "Content_G", "Content_I"],
+    10: ["Content_G", "Content_H", "Content_J"],
+    11: ["Content_A", "Content_B", "Content_J"],
+    12: ["Content_C", "Content_E", "Content_G"],
+    13: ["Content_D", "Content_F", "Content_I"],
+    14: ["Content_H", "Content_J", "Content_K"],
+    15: ["Content_B", "Content_F", "Content_H"],
+    16: ["Content_A", "Content_D", "Content_J"],
+    17: ["Content_C", "Content_E", "Content_I"],
+    18: ["Content_G", "Content_H", "Content_K"],
+    19: ["Content_B", "Content_E", "Content_J"],
+    20: ["Content_A", "Content_F", "Content_I"],
+    2100: ["Content_L", "Content_M"],  
+    2101: ["Content_A", "Content_G", "Content_L"],
+    3102: ["Content_C", "Content_H", "Content_M"],
+    2103: ["Content_E", "Content_I", "Content_J"],
+    2104: ["Content_B", "Content_D", "Content_K"],
+    3105: ["Content_A", "Content_C", "Content_L"],
+    2106: ["Content_D", "Content_G", "Content_J"],
+    3107: ["Content_E", "Content_H", "Content_M"],
+    2108: ["Content_B", "Content_F", "Content_K"],
+    2109: ["Content_A", "Content_I", "Content_L"],
+    3310: ["Content_C", "Content_G", "Content_J"],
     }
-    
     # Example recommendations for a user (change user_id accordingly)
-    user_id = 1
+    user_id = 2100
+    user_community = partition[user_id]
+    print(f"User {user_id} belongs to Community {user_community}")
+
+
     recommended_content = recommend_within_community(user_id, G, partition, content_dict)
     print(f"Recommended Content for User {user_id}:", recommended_content)
     
